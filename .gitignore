@@ -9,3 +9,6 @@
 *.tmp
 .vscode/
 .idea/
+
+# If you add npm tooling later
+node_modules/

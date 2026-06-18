@@ -49,6 +49,13 @@
             horizAlign="center"
             width="1920"
             translation="[0, 1010]" />
+        <!-- Fires every <duration> seconds. repeat="true" keeps it
+             firing so the slideshow runs continuously. We start it
+             from code, once the first pair is on screen. -->
+        <Timer
+            id="slideshowTimer"
+            duration="15."
+            repeat="true" />
 
     </children>
 
