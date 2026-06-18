@@ -1,3 +1,29 @@
+# Roku Photo Slideshow
+
+A Roku SceneGraph channel that displays photos from a remote source as a fullscreen slideshow.
+
+## Features
+
+- Fullscreen image display
+
+- Automatic slideshow rotation
+
+- Roku SceneGraph implementation
+
+## Installation
+
+1. Clone repository
+
+2. Package as Roku channel
+
+3. Deploy to Roku developer mode device
+
+## Author
+
+Mark J. Gutman
+
+----
+
 AI-Assisted Roku Development Project
 
 Objective:
