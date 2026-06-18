@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+    MainScene.xml — the root scene.
+
+    Milestone 3: two photos side by side. This is your first real
+    multi-photo layout. The whole 1920 x 1080 canvas is split into
+    two halves with a thin gutter between them:
+
+        [   photoLeft   ] | [   photoRight   ]
+         0 ........... 955  965 ......... 1920
+
+    A Poster is just a positioned box that draws an image, so a
+    grid is nothing more than several Posters with different
+    translations. Add more Posters later and you have a 4-up grid.
+-->
+
+<component name="MainScene" extends="Scene">
+
+    <!-- A plain black backdrop, so the letterbox bars around
+         portrait photos look intentional rather than accidental. -->
+    <children>
+
+        <!-- LEFT half. translation is [x, y] from the top-left.
+             loadDisplayMode="scaleToFit" shrinks the photo to fit
+             inside this box while keeping its shape (no stretching).
+             Swap to "scaleToFill" if you'd rather fill the half and
+             crop the edges instead of showing letterbox bars. -->
+        <Poster
+            id="photoLeft"
+            translation="[0, 0]"
+            width="955"
+            height="1080"
+            loadDisplayMode="scaleToFit" />
+
+        <!-- RIGHT half. Starts at x=965, leaving a 10px gutter. -->
+        <Poster
+            id="photoRight"
+            translation="[965, 0]"
+            width="955"
+            height="1080"
+            loadDisplayMode="scaleToFit" />
+
+        <!-- Caption shown while loading; hidden once both photos
+             are up. Stays visible (with an error) if a load fails. -->
+        <Label
+            id="statusLabel"
+            text="Loading photos..."
+            horizAlign="center"
+            width="1920"
+            translation="[0, 1010]" />
+
+    </children>
+
+    <script type="text/brightscript" uri="MainScene.brs" />
+
+</component>

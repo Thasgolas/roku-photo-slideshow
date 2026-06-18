@@ -1,0 +1,25 @@
+# manifest — Roku channel metadata.
+#
+# This file MUST be named "manifest" (no extension) and sit at the
+# root of the package. Roku reads it at install time. Lines are
+# simple key=value pairs; blank lines and # comments are ignored.
+
+# --- Identity shown on the Roku home screen ---
+title=Family Photo Slideshow
+
+# --- Version numbers (bump build_version on every sideload) ---
+major_version=1
+minor_version=0
+build_version=2
+
+# --- UI resolution ---
+# "fhd" = 1920 x 1080. We design every layout against this canvas
+# and let Roku scale down for 720p TVs automatically.
+ui_resolutions=fhd
+
+# --- Artwork (placeholder images generated for now) ---
+# splash_screen = shown for a moment while the channel loads.
+# mm_icon_*     = the tile on the Roku home screen.
+splash_screen_fhd=pkg:/images/splash_fhd.jpg
+mm_icon_focus_fhd=pkg:/images/icon_focus_fhd.png
+mm_icon_side_fhd=pkg:/images/icon_side_fhd.png
