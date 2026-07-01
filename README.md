@@ -2,6 +2,10 @@
 
 A Roku SceneGraph channel that displays photos from a remote source as a fullscreen slideshow.
 
+## Purpose
+
+Experimental Roku photo slideshow application exploring AI-assisted software development and SceneGraph/BrightScript.
+
 ## Features
 
 - Fullscreen image display
@@ -12,7 +16,7 @@ A Roku SceneGraph channel that displays photos from a remote source as a fullscr
 
 ## Engineering Goals
 
-This project is less about Roku itself than about demonstrating disciplined engineering practices while learning an unfamiliar platform. The project emphasizes iterative development, AI-assisted coding with human review, architecture validation, testing on physical hardware, and documenting findings throughout the process.
+This project is less about Roku itself than about demonstrating disciplined engineering practices while learning an unfamiliar platform. The project emphasizes iterative development, AI-assisted coding with human review, architecture validation, testing on physical hardware, and documenting findings throughout the process. 
 
 ## Installation
 
